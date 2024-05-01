@@ -15,7 +15,7 @@ public class CustomerDto {
     private String email;
 
     @NotEmpty(message = "Mobile number can't be Empty")
-    @Pattern(regexp = "(^$|[0-9{10}])",message="Mobile number must be a 10 digit number")
+    @Pattern(regexp = "(^$|[0-9]{10})",message="Mobile number must be a 10 digit number")
     private String mobileNumber;
 
     private AccountsDto accountsDto;
