@@ -18,12 +18,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 									version = "v0.0_Base",
 									contact = @Contact(
 											name = "Account Support Team",
-											email = "accounts@indianbank.com",
-											url="https://www.indianbank.com"
+											email = "accounts@dummybank.com",
+											url="https://www.dummybank.com"
 									),
 									license = @License(
 											name = "Apache 2.0",
-											url = "www.apache.com"
+											url = "https://www.apache.com"
 									)
 
 							),
