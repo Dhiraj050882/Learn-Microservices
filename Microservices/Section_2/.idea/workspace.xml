@@ -4,25 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3698c9e3-a0e5-487c-a33f-daebbf878482" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/audit/AuditAwareImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/constant/LoansConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/controller/LoansController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/dto/ErrorResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/dto/LoansDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/dto/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/entity/Loans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/mapper/LoansMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/repository/LoanRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/service/ILoanService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/learnmicroservices/loans/service/impl/LoanServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loans/src/main/resources/schema.sql" afterDir="false" />
+    <list default="true" id="ac188265-abd5-45c1-8bd8-8dc5d7663eed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cards/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/CardsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/audit/CardsAuditAwareImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/constant/CardsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/controller/CardsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/dto/CardsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/dto/ErrorResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/dto/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/entity/Cards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/exception/CardsAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/mapper/CardsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/repository/CardsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/service/ICardsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/service/impl/CardsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/test/java/com/learnmicroservices/cards/CardsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +47,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Rebase.Settings">
-    <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -59,24 +67,22 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2fvLqLTkxrKuUzwyMqSvgMCH4xG" />
+  <component name="ProjectId" id="2fzAb8W2D7rH1V8c3K6gltOumBd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Account.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.LoansApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Learning_Projects/Microservices&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Cards Application.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Application.LoansApplication">
-    <configuration name="Account" type="Application" factoryName="Application">
+}]]></component>
+  <component name="RunManager" selected="Application.Cards Application">
+    <configuration name="Accounts Application" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.learnmicroservices.accounts.AccountsApplication" />
@@ -85,7 +91,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoansApplication" type="Application" factoryName="Application">
+    <configuration name="Cards Application" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.learnmicroservices.cards.CardsApplication" />
+      <module name="cards" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Loans Application" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.learnmicroservices.loans.LoansApplication" />
@@ -95,48 +110,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Account" />
-      <item itemvalue="Application.LoansApplication" />
+      <item itemvalue="Application.Cards Application" />
+      <item itemvalue="Application.Accounts Application" />
+      <item itemvalue="Application.Loans Application" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3698c9e3-a0e5-487c-a33f-daebbf878482" name="Changes" comment="" />
-      <created>1714676798093</created>
+      <changelist id="ac188265-abd5-45c1-8bd8-8dc5d7663eed" name="Changes" comment="" />
+      <created>1714793604008</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714676798093</updated>
+      <updated>1714793604008</updated>
     </task>
-    <task id="LOCAL-00001" summary="LoanProject Base Version created and unit testing performed. Its working Awesome...">
-      <option name="closed" value="true" />
-      <created>1714683361804</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1714683361804</updated>
-    </task>
-    <task id="LOCAL-00002" summary="LoanProject Base Version created and unit testing performed. Its working Awesome...">
-      <option name="closed" value="true" />
-      <created>1714683752102</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1714683752102</updated>
-    </task>
-    <task id="LOCAL-00003" summary="LoanProject Base Version created and unit testing performed. Its working Awesome...">
-      <option name="closed" value="true" />
-      <created>1714685030134</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1714685030134</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="LoanProject Base Version created and unit testing performed. Its working Awesome..." />
-    <option name="LAST_COMMIT_MESSAGE" value="LoanProject Base Version created and unit testing performed. Its working Awesome..." />
   </component>
 </project>
