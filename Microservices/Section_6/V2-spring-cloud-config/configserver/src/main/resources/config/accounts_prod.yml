@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Dummy Bank accounts related Release APIs "
+  contactDetails:
+    name: "Dhiraj Singh - Release Manager"
+    email: "dhiraj@dummybank.com"
+  onCallSupport:
+    -(111) 515-1256
+    -(111) 523-3456

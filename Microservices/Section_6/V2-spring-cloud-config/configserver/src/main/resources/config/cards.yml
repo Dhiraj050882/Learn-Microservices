@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to Dummy Bank Cards related local APIs "
+  contactDetails:
+    name: "Vipul Tyagi - Developer"
+    email: "vipul.t@dummybank.com"
+  onCallSupport:
+    - (555) 555-4321
+    - (555) 523-5678

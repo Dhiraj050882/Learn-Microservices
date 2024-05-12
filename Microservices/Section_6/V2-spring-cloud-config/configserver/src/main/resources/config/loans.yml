@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to Dummy Bank Loans related local APIs "
+  contactDetails:
+    name: "Sanjay Dutt - Developer"
+    email: "sanjay.d@dummybank.com"
+  onCallSupport:
+    - (555) 555-4321
+    - (555) 523-5678

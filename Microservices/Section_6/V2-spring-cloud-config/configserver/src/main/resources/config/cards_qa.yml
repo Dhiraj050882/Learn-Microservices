@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+cards:
+  message: "Welcome to Dummy Bank Cards related QA APIs "
+  contactDetails:
+    name: "Shruti Sharma - QA Lead"
+    email: "shruti.s@dummybank.com"
+  onCallSupport:
+    - (555) 555-1245
+    - (555) 523-1324

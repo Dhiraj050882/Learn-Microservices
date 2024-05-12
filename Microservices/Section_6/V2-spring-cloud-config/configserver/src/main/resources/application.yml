@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "configserver"
+  profile:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: "classpath:/config"
+    refresh:
+      enabled: false
+
+server:
+  port: 8071
+
