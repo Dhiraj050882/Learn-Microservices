@@ -5,35 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac188265-abd5-45c1-8bd8-8dc5d7663eed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cards/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/CardsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/audit/CardsAuditAwareImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/constant/CardsConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/controller/CardsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/dto/CardsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/dto/ErrorResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/dto/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/entity/Cards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/exception/CardsAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/mapper/CardsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/repository/CardsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/service/ICardsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/learnmicroservices/cards/service/impl/CardsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/test/java/com/learnmicroservices/cards/CardsApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Learning_Projects/Microservices/Section_6/V1-SpringBoot",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -124,6 +102,19 @@
       <option name="presentableId" value="Default" />
       <updated>1714793604008</updated>
     </task>
+    <task id="LOCAL-00001" summary="Base version of Cards Added">
+      <option name="closed" value="true" />
+      <created>1714875920659</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714875920659</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Base version of Cards Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base version of Cards Added" />
   </component>
 </project>
