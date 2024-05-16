@@ -18,3 +18,4 @@ com\learnmicroservices\accounts\entity\Accounts.class
 com\learnmicroservices\accounts\AccountsApplication.class
 com\learnmicroservices\accounts\mapper\AccountsMapper.class
 com\learnmicroservices\accounts\exception\GlobalExceptionHandler.class
+com\learnmicroservices\accounts\dto\AccountsContactInfoDto.class
