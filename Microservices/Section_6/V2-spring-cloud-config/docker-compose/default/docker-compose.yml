@@ -7,10 +7,10 @@ services:
       - "15672:15672"
     healthcheck:
       test: rabbitmq-diagnostics check_port_connectivity
-      interval: 10s
-      timeout: 5s
+      interval: 50s
+      timeout: 25s
       retries: 10
-      start_period: 5s
+      start_period: 25s
     extends:
       file: common-config.yml
       service: network-deploy-service
@@ -24,11 +24,11 @@ services:
       rabbit:
         condition: service_healthy
     healthcheck:
-      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep Up || exit 1"
-      interval: 10s
+      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+      interval: 50s
       timeout: 5s
       retries: 10
-      start_period: 10s
+      start_period: 50s
     extends:
       file: common-config.yml
       service: microservice-base-config
