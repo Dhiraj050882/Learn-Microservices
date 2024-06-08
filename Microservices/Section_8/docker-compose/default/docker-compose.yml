@@ -1,6 +1,6 @@
 services:
   configserver:
-    image: "dhiraj82/configserver:s8"
+    image: "dhiraj82/configserver:s9"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -15,7 +15,7 @@ services:
       service: microservice-base-config
 
   eurekaserver:
-    image: "dhiraj82/eurekaserver:s8"
+    image: "dhiraj82/eurekaserver:s9"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -35,10 +35,16 @@ services:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
   accounts:
-    image: "dhiraj82/accounts:s8"
+    image: "dhiraj82/accounts:s9"
     container_name: accounts-ms
     ports:
       - "8085:8085"
+    healthcheck:
+      test: "curl --fail --silent localhost:8085/actuator/health/readiness | grep UP || exit 1"
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
     depends_on:
       configserver:
         condition: service_healthy
@@ -51,10 +57,16 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "dhiraj82/loans:s8"
+    image: "dhiraj82/loans:s9"
     container_name: loans-ms
     ports:
       - "8090:8090"
+    healthcheck:
+      test: "curl --fail --silent localhost:8090/actuator/health/readiness | grep UP || exit 1"
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
     depends_on:
       configserver:
         condition: service_healthy
@@ -67,10 +79,16 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "dhiraj82/cards:s8"
+    image: "dhiraj82/cards:s9"
     container_name: cards-ms
     ports:
       - "9000:9000"
+    healthcheck:
+      test: "curl --fail --silent localhost:9000/actuator/health/readiness | grep UP || exit 1"
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
     depends_on:
       configserver:
         condition: service_healthy
@@ -78,6 +96,24 @@ services:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "cards"
+    extends:
+      file: common-config.yml
+      service: microservice-eureka-config
+
+  gatewayserver:
+    image: "dhiraj82/gatewayserver:s9"
+    container_name: gatewayserver-ms
+    ports:
+      - "8072:8072"
+    depends_on:
+      accounts:
+        condition: service_healthy
+      cards:
+        condition: service_healthy
+      loans:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "gatewayserver"
     extends:
       file: common-config.yml
       service: microservice-eureka-config

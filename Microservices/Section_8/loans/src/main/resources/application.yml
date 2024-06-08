@@ -31,13 +31,23 @@ management:
   info:
     env:
       enabled: true
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
   endpoint:
     shutdown:
       enabled: true
+    health:
+      probes:
+        enabled: true
+
 
 endpoints:
   shutdown:
     enabled: true
+
 
 info:
   app:
@@ -53,3 +63,9 @@ eureka:
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka
+
+logging:
+  level:
+    com:
+      learnmicroservices:
+        loans: DEBUG

@@ -11,13 +11,12 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.Pattern;
 import org.apache.http.HttpStatus;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Tag(
         name = "REST API for Customers in Indian Bank",
@@ -28,6 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 public class CustomerController {
 
+    public static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
     private final ICustomerService customerService;
 
     public CustomerController(ICustomerService customerService) {
@@ -52,11 +52,13 @@ public class CustomerController {
                     ))
             )
     })
-    public ResponseEntity<CustomerDetailsDto> fetchCustomerDetails(@RequestParam
+    public ResponseEntity<CustomerDetailsDto> fetchCustomerDetails( @RequestHeader("demobank-correlation-id") String strCorrelationId,
+                                                                   @RequestParam
                                                                    @Pattern(regexp = "(^$|[0-9]{10})",message="Mobile number must be a 10 digit number")
                                                                    String mobileNumber){
 
-        CustomerDetailsDto customerDetailsDto = customerService.fetchCustomerDetails(mobileNumber);
+        logger.debug("dummbank-correlation-id found : {}", strCorrelationId);
+        CustomerDetailsDto customerDetailsDto = customerService.fetchCustomerDetails(strCorrelationId, mobileNumber);
 
         return ResponseEntity.status(HttpStatus.SC_OK).body(customerDetailsDto);
     }

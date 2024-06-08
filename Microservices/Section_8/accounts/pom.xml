@@ -79,11 +79,6 @@
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.github.ulisesbocchio</groupId>
-			<artifactId>jasypt-spring-boot-starter</artifactId>
-			<version>3.0.5</version>
-		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -106,15 +101,9 @@
 				<version>3.4.2</version>
 				<configuration>
 					<to>
-						<image>dhiraj82/${project.artifactId}:s8</image>
+						<image>dhiraj82/${project.artifactId}:s9</image>
 					</to>
 				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>com.github.ulisesbocchio</groupId>
-				<artifactId>jasypt-maven-plugin</artifactId>
-				<version>3.0.5</version>
 			</plugin>
 		</plugins>
 	</build>
